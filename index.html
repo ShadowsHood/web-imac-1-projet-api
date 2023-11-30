@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="src/css/styles.css" rel="stylesheet">
     <script src="src/js/youtubeapi.js"></script>
 </head>
 <body>
-    <p>Lucas Site whouhaaa</p>
-    <div class="YoutubeBox">
-
-    </div>
+    <header>
+        <p>header</p>
+    </header>   
+    <main class="boxFilm">
+            <div id="filmAsker" class="boxItem">
+            <p>Lucas Site whouhaaa</p>
+            <form onsubmit="event.preventDefault(); searchFilm(document.getElementById('movieName').value);">
+                <label for="movieName">Nom du film :</label>
+                <input type="text" id="movieName" name="movieName" required>
+                <button type="submit">Rechercher</button>
+            </form>
+            <div id="info">
+            </div>
+            </div>
+            <div class="YoutubeBox" class="boxItem"></div>
+    </main>
+    <footer>
+        <p>footer</p>
+    </footer>
 </body>
 </html>

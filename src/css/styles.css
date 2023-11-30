@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    text-align: center;
+}
+
+p{
+    color : rgb(0, 0, 0);
+}
+
+header{
+    background-color: rgb(65, 172, 75);
+    width: 100%;
+    height: 10vh;
+    
+}
+
+
+main{
+    background-color: rgb(211, 254, 124);
+    width: 100%;
+    height: 80vh;
+
+}
+
+footer{
+    background-color: rgb(65, 172, 75);
+    width: 100%;
+    height: 10vh;
+}
+
+.boxFilm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxItem{
+    padding: 5%;
+}
+
+
