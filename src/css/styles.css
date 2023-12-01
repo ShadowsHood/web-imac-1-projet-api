@@ -40,3 +40,13 @@ footer{
 }
 
 
+#boiteMenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxHead{
+    width: 20%;
+}
