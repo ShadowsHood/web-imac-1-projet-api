@@ -1,52 +1,32 @@
 *{
     margin: 0;
-    text-align: center;
+    color : white;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
 }
 
-p{
-    color : rgb(0, 0, 0);
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-header{
-    background-color: rgb(65, 172, 75);
-    width: 100%;
-    height: 10vh;
-    
+main>*{
+    margin: 50px 100px 50px 100px;
 }
-
 
 main{
-    background-color: rgb(211, 254, 124);
-    width: 100%;
-    height: 80vh;
-
-}
-
-footer{
-    background-color: rgb(65, 172, 75);
-    width: 100%;
-    height: 10vh;
-}
-
-.boxFilm{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.boxItem{
-    padding: 5%;
+    flex-direction: column;
+    margin: 0;
 }
 
 
-#boiteMenu{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+#partieDuHaut{
+    margin: 90px 50px 20px 50px;
 }
 
-.boxHead{
-    width: 20%;
+#partieDuBas{
+    background-color: #11304c;
+    width: 100%;
+    margin: 0;
 }

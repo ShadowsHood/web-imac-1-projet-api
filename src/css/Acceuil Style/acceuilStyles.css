@@ -1,0 +1,22 @@
+
+/* Je voulais changer le background color de tous mes elements 
+dans la partie du bas mais je connais pas le selecteur :/ */
+
+#partieDuBas>*{
+    margin : 50px 100px 50px 100px;
+    background-color: #11304c;
+}
+
+#partieDuBas>*>*>*{
+    background-color: #11304c;
+}
+
+#partieDuBas>*>*{
+    background-color: #11304c;
+    justify-self: center;
+}
+
+
+.boite{
+    display: block;
+}
