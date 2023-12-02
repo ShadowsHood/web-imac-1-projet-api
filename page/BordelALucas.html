@@ -7,22 +7,24 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
     </style>
-    <link href="src/css/styles.css" rel="stylesheet">
+    <link href="../src/css/styles.css" rel="stylesheet">
+    <link href="../src/css/headerStyles.css" rel="stylesheet">
+    <link href="../src/css/footerStyles.css" rel="stylesheet">
+    <link href="../src/css/Acceuil Style/acceuilStyles.css" rel="stylesheet">
     <script src="src/js/youtubeapi.js"></script>
 </head>
 <body>
     <div id="gridPrincipal">
         <!-- HEADER -->
         <header>
-            <img src="logo.png">
-        </header>   
-        <main class="boxFilm">
-            <div id="boiteMenu">
-                <h2 id="acceuilButton" class="menuButton">Accueil</h2>
-                <h2 id="aProposButton" class="menuButton">A propos</h2>
-                <h2 id="siteButton" class="menuButton">Site</h2>
-                <div id="traitMenu" class="trait"></div>
-            </div>
+            <h2 id="acceuilButton" class="menuButton">Accueil</h2>
+            <h2 id="rechercherButton" class="menuButton">Rechercher</h2>
+            <h2 id="aProposButton" class="menuButton">A propos</h2>
+            <h2 id="techniqueButton" class="menuButton">Technique</h2>
+        </header> 
+        <!-- MAIN -->
+        <main>
+
             <form id="barreRecherche" onsubmit="event.preventDefault(); searchFilm(document.getElementById('movieName').value);">
                 <input placeholder="Chercher un film..." type="text" id="movieName" name="movieName" required>
                 <button type="submit">Rechercher</button>

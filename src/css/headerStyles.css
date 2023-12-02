@@ -1,0 +1,17 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0D1821;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+}
+
+header>*{
+    background-color: #0D1821;
+}
+
+header>*:hover{
+    color: #00B9E7;
+}
