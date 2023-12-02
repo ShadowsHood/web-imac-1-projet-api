@@ -4,33 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    </style>
     <link href="src/css/styles.css" rel="stylesheet">
     <script src="src/js/youtubeapi.js"></script>
 </head>
 <body>
-    <header>
-        <div id="boiteMenu">
-            <h1 class="boxHead">header</h1>
-            <h1 class="boxHead">header</h1>
-            <h1 class="boxHead">header</h1>
-            <h1 class="boxHead">header</h1>
-        </div>
-    </header>   
-    <main class="boxFilm">
-            <div id="filmAsker" class="boxItem">
-            <p>Lucas Site whouhaaa</p>
-            <form onsubmit="event.preventDefault(); searchFilm(document.getElementById('movieName').value);">
-                <label for="movieName">Nom du film :</label>
-                <input type="text" id="movieName" name="movieName" required>
+    <div id="gridPrincipal">
+        <header>
+            <div id="topBande"><p>Logo</p></div>
+        </header>   
+        <main class="boxFilm">
+            <div id="boiteMenu">
+                <h2 id="acceuilButton">Accueil</h2>
+                <h2 id="aProposButton">A propos</h2>
+                <h2 id="siteButton">Site</h2>
+                <div id="traitMenu" class="trait"></div>
+            </div>
+            <form id="barreRecherche" onsubmit="event.preventDefault(); searchFilm(document.getElementById('movieName').value);">
+                <input placeholder="Chercher un film..." type="text" id="movieName" name="movieName" required>
                 <button type="submit">Rechercher</button>
             </form>
-            <div id="info">
-            </div>
+            <h1 id="filmTitle">Tritre film</h1>
+            <div id="infoFilm">
+                <p>Date : Ma date</p>
+                <p id="Director">Director : Mon Direceur</p>
+                <p>Durée : Ma durée</p>
             </div>
             <div class="YoutubeBox" class="boxItem"></div>
-    </main>
-    <footer>
-        <p>footer</p>
-    </footer>
+            <div id="traitEndInfo" class="trait"></div>
+            <div id="infoComplementaire">
+                <img id="afficheFilm" src="https://www.edisaxe.com/310958-large_default/comment-dessiner-100-fleurs.jpg" alt="Mon affiche"/>
+                <p id="originalTitle">Titre originale : Hagagagaga</p>
+                <p id="dateSortie">Date de sortie : 07 mai 2003</p>
+                <p id="genreFilm">Genre : Pas drole</p>
+                <p id="castingFilm">Casting : Des gens pas très beaux</p>
+                <p id="shortSummary">Un p'tit résumé : HAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGA
+                    GAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGA
+                    GAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGA !
+                    Bien sur, c'est très sommaire...
+                </p>
+            </div>
+            <div id="traitEndInfoComplementaire" class="trait"></div>
+        </main>
+        <footer>
+            <p>footer</p>
+        </footer>
+    </div>  
 </body>
 </html>

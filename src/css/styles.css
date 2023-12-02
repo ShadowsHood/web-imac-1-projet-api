@@ -1,52 +1,202 @@
 *{
     margin: 0;
     text-align: center;
+    color : white;
+    font-family: 'Inter', sans-serif;
+
 }
 
-p{
-    color : rgb(0, 0, 0);
+
+#gridPrincipal{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 70px 3000px 70px;
+    background-color: black;
 }
 
 header{
-    background-color: rgb(65, 172, 75);
-    width: 100%;
-    height: 10vh;
-    
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    display: grid;
+    background-color: #252E39;
 }
 
 
 main{
-    background-color: rgb(211, 254, 124);
-    width: 100%;
-    height: 80vh;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 70px 150px 150px 100px 500px 3px 600px 3px;
+    background-color: #0D1821;
+    align-items: center;
 
 }
 
 footer{
-    background-color: rgb(65, 172, 75);
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    background-color: #252E39;
+}
+
+.trait{
     width: 100%;
-    height: 10vh;
+    height: 100%;
+    background-color: #252E39;
 }
 
-.boxFilm{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+/*Header Part*/
+
+header>*{
+    background-color: #252E39;
 }
 
-.boxItem{
-    padding: 5%;
-}
+/*Main Part*/
 
+main>*{
+    text-align: left;
+}
 
 #boiteMenu{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px 3px;
+    font-size: 13px;
     align-items: center;
 }
 
-.boxHead{
-    width: 20%;
+#acceuilButton{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
+
+#aProposButton{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#siteButton{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+#traitMenu{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+#barreRecherche{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#barreRecherche>button{
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    background-color: #252E39;
+    border-radius: 40px;
+    padding: 10px;
+    border-style: none;
+}
+
+#barreRecherche>button:hover{
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    background-color: #afd7fa;
+    border-radius: 40px;
+    padding: 10px;
+    border-style: none;
+}
+
+#barreRecherche>input{
+    width: 70%;
+    height: 35px;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    background-color: #252E39;
+    border-radius: 40px;
+    padding: 10px;
+    border-style: none;
+    text-align: start;
+}
+
+#filmTitle{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-size: 100px;
+}
+
+#infoFilm{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    font-size: 25px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.YoutubeBox{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+
+#traitEndInfo{
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+
+#infoComplementaire{
+    grid-column: 2 / 3;
+    grid-row: 7 / 8;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
+}
+
+#afficheFilm{
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    width: 100%;
+    height: 100%;
+}
+
+#originalTitle{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#dateSortie{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#genreFilm{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+#castingFilm{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+#shortSummary{
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    font-size: 15px;
+}
+
+#traitEndInfoComplementaire{
+    grid-column: 2 / 3;
+    grid-row: 8 / 9;
+}
+
+

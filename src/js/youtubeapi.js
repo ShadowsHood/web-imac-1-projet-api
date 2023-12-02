@@ -11,26 +11,22 @@ async function searchFilm(name) {
     const responseOMDB = await fetch("http://www.omdbapi.com/?t="+name+"&apikey=2d2c5592");
     const film = await responseOMDB.json();
     console.log(film);
-    let div = document.getElementById("info");
-    div.innerHTML = film.Title;
     let monFilm = film.Title;
     if(monFilm == "undefined"){
         document.querySelector(".YoutubeBox").innerHTML = `
         <img src="https://kaamelott-gifboard.fr/gifs/jconnais-pas.gif">
     `
     }else{
-        const responseYTB = await fetch("https://youtube.googleapis.com/youtube/v3/search?maxResults=1&q=bande%20annonce%20francais%20"+monFilm+"&type=video&key=AIzaSyDUWcSrdcXJM7uewjk5BaKs8FDNJPqvphQ");
+        /*const responseYTB = await fetch("https://youtube.googleapis.com/youtube/v3/search?maxResults=1&q=bande%20annonce%20francais%20"+monFilm+"&type=video&key=AIzaSyDUWcSrdcXJM7uewjk5BaKs8FDNJPqvphQ");
         const maVideo = await responseYTB.json();
         let videos = maVideo.items;
         for(video of videos){
-            let myNewLink = "https://www.youtube.com/embed/"+(video.id.videoId);
+            let myNewLink = "https://www.youtube.com/embed/"+(video.id.videoId);*/
+            let myNewLink = "https://www.youtube.com/embed/BCCwCSdXRSE?si=38oZbTNsThjB5eoe";
             document.querySelector(".YoutubeBox").innerHTML = `
-                <iframe width="560" height="315" src=`+myNewLink+` title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width=100% height=500px src=`+myNewLink+` title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             `
-            document.querySelector("#director").innerHTML = `
-                <p id="director"> Directeur : `+film.Director+`</p>
-            `
-        };
+        //};
     }
 }
 
