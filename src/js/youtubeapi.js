@@ -26,6 +26,26 @@ async function searchFilm(name) {
             document.querySelector(".YoutubeBox").innerHTML = `
                 <iframe width=100% height=500px src=`+myNewLink+` title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             `
+            document.querySelector("#infoComplementaire").innerHTML = `
+                <img id="afficheFilm" src=`+film.Poster+` alt="Mon affiche"/>
+                <p id="originalTitle">Titre originale : <span class="filmExport">`+film.Title+`</span></p>
+                <p id="dateSortie">Date de sortie : <span class="filmExport">`+film.Released+`</span></p>
+                <p id="genreFilm">Genre : <span class="filmExport">`+film.Genre+`</span></p>
+                <p id="castingFilm">Casting : <span class="filmExport">`+film.Actors+`</span></p>
+                <p id="shortSummary"><span class="filmExport">`+film.Plot+`</span></p>
+            `
+            document.querySelector("#filmTitle").innerHTML = `
+                <h1 id="filmTitle">`+film.Title+`</h1>
+            `
+            document.querySelector("#infoFilm").innerHTML = `
+                <p>Date : <span class="filmExport">`+film.Released+`</span></p>
+                <p id="Director">Director : <span class="filmExport">`+film.Director+`</span></p>
+                <p>Durée : <span class="filmExport">`+film.Runtime+`</span></p>
+
+            `
+            document.querySelector("#traitDuBas").innerHTML = `
+            <div id="traitEndInfoComplementaire" class="trait"></div>
+            `
         //};
     }
 }
