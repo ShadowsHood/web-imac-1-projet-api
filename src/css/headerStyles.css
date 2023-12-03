@@ -10,8 +10,20 @@ header{
 
 header>*{
     background-color: #0D1821;
+    
 }
 
-header>*:hover{
+.menuButton{
+    padding: 5px;
+}
+
+header>.menuButton:hover{
     color: #00B9E7;
+    border-bottom: solid;
+    border-bottom-color: #00B9E7;
+    
+}
+
+a{
+    text-decoration: none;
 }

@@ -1,3 +1,7 @@
+.textToCenter{
+    text-align: center;
+}
+
 
 /* Je voulais changer le background color de tous mes elements 
 dans la partie du bas mais je connais pas le selecteur :/ */
@@ -16,7 +20,49 @@ dans la partie du bas mais je connais pas le selecteur :/ */
     justify-self: center;
 }
 
+/* <!-- Pas toucher cette div, ce sera la spécial Lucas --> */  
+
+#specialLucas{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    position: relative;
+    height: 550px;
+    width: 950px;
+    margin: 30px;
+}
+
+#specialLucas img{
+    position: absolute;
+}
+
+#actualImage{
+    grid-column: 2 / 5;
+    width: 100%;
+    height: 500px;
+    z-index: 3;
+}
+
+#previousImage{
+    grid-column: 1 / 3;
+    opacity: 0.5;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+}
+
+#nextImage{
+    grid-column: 4 / 6;
+    opacity: 0.5;
+    width: 100%;
+    height: 400px;
+    z-index: 2;
+}
+
+/* Affichage des 3 top film */
 
 .boite{
     display: block;
+    margin: 20px 20px 20px 20px;
+    text-align: center  ;
 }
+
