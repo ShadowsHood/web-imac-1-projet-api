@@ -9,12 +9,17 @@ async function searchFilm(name) {
     const responseOMDB = await fetch("http://www.omdbapi.com/?t="+name+"&apikey=2d2c5592");
     const film = await responseOMDB.json();
     console.log(film);
-    let monFilm = film.Title;
-    if(monFilm == "undefined"){
-        document.querySelector(".YoutubeBox").innerHTML = `
-        <img src="https://kaamelott-gifboard.fr/gifs/jconnais-pas.gif">
-    `
+    if(film.Response == "False"){
+        document.querySelector("#lecteurYoutube").innerHTML = `
+            <img src="https://kaamelott-gifboard.fr/gifs/jconnais-pas.gif">
+        `
+        document.querySelector("#mainInfo").innerHTML = `
+            <h1 id="filmTitle">Aucun film trouvé... Veuillez reesayer !</h1>
+        `
+        document.querySelector("#partieDuBas").innerHTML = `
+        `
     }else{
+        let monFilm = film.Title;
         const responseYTB = await fetch("https://youtube.googleapis.com/youtube/v3/search?maxResults=1&q=bande%20annonce%20francais%20"+monFilm+"&type=video&key=AIzaSyDUWcSrdcXJM7uewjk5BaKs8FDNJPqvphQ");
         const maVideo = await responseYTB.json();
         let videos = maVideo.items;

@@ -3,23 +3,6 @@
 }
 
 
-/* Je voulais changer le background color de tous mes elements 
-dans la partie du bas mais je connais pas le selecteur :/ */
-
-#partieDuBas>*{
-    margin : 50px 100px 50px 100px;
-    background-color: #11304c;
-}
-
-#partieDuBas>*>*>*{
-    background-color: #11304c;
-}
-
-#partieDuBas>*>*{
-    background-color: #11304c;
-    justify-self: center;
-}
-
 /* <!-- Pas toucher cette div, ce sera la spécial Lucas --> */  
 
 #specialLucas{
@@ -60,9 +43,16 @@ dans la partie du bas mais je connais pas le selecteur :/ */
 
 /* Affichage des 3 top film */
 
+#partieDuBas>*>*{
+    justify-self: center;
+}
+
 .boite{
     display: block;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 5px 20px 5px;
     text-align: center  ;
 }
 
+.boite>p{
+    width: 300px;
+}
