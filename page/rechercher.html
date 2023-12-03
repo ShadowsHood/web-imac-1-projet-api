@@ -11,44 +11,37 @@
     <link href="../src/css/headerStyles.css" rel="stylesheet">
     <link href="../src/css/footerStyles.css" rel="stylesheet">
     <link href="../src/css/Rechercher Style/rechercherStyles.css" rel="stylesheet">
+    <script src="../src/js/recheche.js"></script>
 </head>
 <body>
-    <div id="gridPrincipal">
-        <!-- HEADER -->
-        <header>
-            <a id="acceuilButton" class="menuButton" href="./accueil.html">Accueil</a>
-            <a id="rechercherButton" class="menuButton" href="./rechercher.html">Rechercher</a>
-            <a id="aProposButton" class="menuButton" href="./aProspos.html">A propos</a>
-            <a id="techniqueButton" class="menuButton" href="./technique.html">Technique</a>
-        </header> 
-        <!-- MAIN -->
-        <main>
-            <div id="partieDuHaut">
-                <!-- Barre de recherche -->
-                <form id="barreRecherche" onsubmit="event.preventDefault(); searchFilm(document.getElementById('movieName').value);">
-                    <input placeholder="Chercher un film..." type="text" id="movieName" name="movieName" required>
-                    <button type="submit">Rechercher</button>
-                </form>
-                <h1 id="filmTitle">Titre Film</h1>
-                <!-- Main Info -->
-                <div class="flexbox">
-                    <p>Date : 2019</p>
-                    <div class="separateur"></div>
-                    <p>Director : Pierre CAILLOU</p>
-                    <div class="separateur"></div>
-                    <p>Duration</p>
-                </div>
-                <!-- Lecteur Youtube -->
-                <div id="lecteurYoutube"></div>
+    <!-- HEADER -->
+    <header>
+        <a id="acceuilButton" class="menuButton" href="./accueil.html">Accueil</a>
+        <a id="rechercherButton" class="menuButton" href="./rechercher.html">Rechercher</a>
+        <a id="aProposButton" class="menuButton" href="./aProspos.html">A propos</a>
+        <a id="techniqueButton" class="menuButton" href="./technique.html">Technique</a>
+    </header> 
+    <!-- MAIN -->
+    <main>
+        <div id="partieDuHaut">
+            <!-- Barre de recherche -->
+            <form id="barreRecherche" onsubmit="event.preventDefault(); searchFilm(document.getElementById('movieName').value);">
+                <input placeholder="Chercher un film..." type="text" id="movieName" name="movieName" required>
+                <button type="submit">Rechercher</button>
+            </form>
+            <!-- Main Info (complétée par le js) -->
+            <div id="mainInfo" class="flexbox">
             </div>
-            <div id="partieDuBas">
-                <!-- Cette partie est complétée par le JS -->
-            </div>
-        </main>
-        <!-- FOOTER -->
-        <footer>
-            <p>footer</p>
-        </footer>
-    </div>  
+            <!-- Lecteur Youtube -->
+            <div id="lecteurYoutube"></div>
+        </div>
+        <div id="partieDuBas">
+            <!-- Cette partie est complétée par le JS -->
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p>footer</p>
+    </footer>
 </body>
 </html>

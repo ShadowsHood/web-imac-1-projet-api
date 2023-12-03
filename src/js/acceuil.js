@@ -1,4 +1,5 @@
-    
+// Changement des films de l'accueil
+
 function changeActualFilm(compteur, nbrImage){
     let actualNumber = compteur.toString();
     if(compteur == 0){

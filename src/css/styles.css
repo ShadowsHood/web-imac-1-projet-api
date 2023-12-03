@@ -11,7 +11,7 @@
 }
 
 main>*{
-    margin: 50px 100px 50px 100px;
+    padding: 90px 150px 20px 150px;
 }
 
 main{
@@ -20,13 +20,21 @@ main{
     margin: 0;
 }
 
-
-#partieDuHaut{
-    margin: 90px 50px 20px 50px;
-}
+/* Toujours prcq je connais pas le selecteur */
 
 #partieDuBas{
     background-color: #11304c;
     width: 100%;
-    margin: 0;
+}
+
+#partieDuBas>*{
+    background-color: #11304c;
+}
+
+#partieDuBas>*>*{
+    background-color: #11304c;
+}
+
+#partieDuBas>*>*>*{
+    background-color: #11304c;
 }
