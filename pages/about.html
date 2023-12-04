@@ -3,31 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CinéData - A Propos</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-    </style>
+
+    <!-- <link rel="icon" href="favicon.ico" /> -->
+    <title>CinéData - About</title>
+    <meta name="description" content="Bienvenue sur le meilleur site d'informations sur vos films préférés">
+
+    <!-- Styles -->
     <link href="../src/css/styles.css" rel="stylesheet">
-    <link href="../src/css/headerStyles.css" rel="stylesheet">
-    <link href="../src/css/footerStyles.css" rel="stylesheet">
-    <link href="../src/css/A propos Style/aProposStyles.css" rel="stylesheet">
+    <link href="../src/css/header.css" rel="stylesheet">
+    <link href="../src/css/pages/about.css" rel="stylesheet">
+    <link href="../src/css/footer.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="../src/js/script.js"></script>
 </head>
+
 <body>
-    <div id="gridPrincipal">
-        <!-- HEADER -->
-        <header>
-            <a id="acceuilButton" class="menuButton" href="./accueil.html">Accueil</a>
-            <a id="rechercherButton" class="menuButton" href="./rechercher.html">Rechercher</a>
-            <a id="aProposButton" class="menuButton" href="./aProspos.html">A propos</a>
-            <a id="techniqueButton" class="menuButton" href="./technique.html">Technique</a>
-        </header> 
-        <!-- MAIN -->
-        <main>
-        </main>
-        <!-- FOOTER -->
-        <footer>
-            <p>footer</p>
-        </footer>
-    </div>  
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div id="headerlogo-container" class="logo">
+                <a href="./index.html">
+                    <img src="../src/img/logo.png" alt="Logo CinéData - Menu page d'accueil" id="headerlogo">
+                </a>
+            </div>
+            <!-- Menu -->
+            <nav id="main-nav">
+                <ul id="mainmenu" class="menu flex">
+                    <li class="mainmenu-item">
+                        <a href="./index.html" class="link" id="menu-home">Accueil</a>
+                    </li>
+                    <li class="mainmenu-item">
+                        <a href="./search.html" class="link" id="menu-search">Recherche</a>
+                    </li>
+                    <li class="mainmenu-item">
+                        <a href="#" class="link" id="menu-about">À propos</a>
+                    </li>
+                    <li class="mainmenu-item">
+                        <a href="./documentation.html" class="link" id="menu-doc">Documentation</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p>footer</p>
+    </footer>
+  
 </body>
 </html>
