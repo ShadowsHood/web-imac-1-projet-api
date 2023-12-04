@@ -51,14 +51,14 @@
 
     <!-- MAIN -->
     <main>
-        <div id="partieDuHaut" class="container">
-            <!-- Intégration du logo -->
-            <img src="../src/img/logo.png" alt="Logo du site">
-            <!-- Trait de séparation -->
-            <div class="trait"></div>
-            <h2 class="textToCenter">Premier site de recherche de films à l'IMAC !</h2>
-            <!-- Pas toucher cette div, ce sera la spécial Lucas -->
-            <!-- En travaux, faire attention ! -->
+
+        <!-- Intro -->
+        <section id="intro" class="container flex f-center">
+            <h1>Premier site de recherche de films à l'IMAC</h1>
+        </section>
+
+        <!-- Slider -->
+        <section id="partieDuHaut" class="container">
             <div id="specialLucas">
                 <script>setInterval(compteurAdd1, 3000, compteur, 6)</script>
                 <img src="../src/img/film0.jpg" alt="Previous Image" id="previousImage">
@@ -66,8 +66,9 @@
                 <img src="../src/img/film2.jpg" alt="Next Image" id="nextImage">
             </div>
             <!-- Circulez svp ! -->
-        </div>
-        <div id="partieDuBas" class="container">
+        </section>
+
+        <section id="partieDuBas" class="container">
             <h1>Films à l'affiche :</h1>
             <!-- Trait de séparation -->
             <div class="trait"></div>
@@ -80,7 +81,8 @@
                 <div id="boite3" class="boite">
                 </div>
             </div>
-        </div>
+        </section>
+
     </main>
 
     <!-- FOOTER -->
