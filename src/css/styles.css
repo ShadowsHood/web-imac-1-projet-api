@@ -53,6 +53,10 @@ ul {
 
 /*--------------------------- Main */
 main {
+    width: 100%;
+}
+
+main .container {
     padding: 10vw;
 }
 
