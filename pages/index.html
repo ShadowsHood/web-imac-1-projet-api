@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="icon" href="favicon.ico" /> -->
+    <title>CinéData - Accueil</title>
+    <meta name="description" content="">
+
+    <!-- Styles -->
+    <link href="../src/css/styles.css" rel="stylesheet">
+    <link href="../src/css/header.css" rel="stylesheet">
+    <link href="../src/css/pages/home.css" rel="stylesheet">
+    <link href="../src/css/footer.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="../src/js/acceuil.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-container">
+            <div id="headerlogo-container" class="logo">
+                <a href="#">
+                    <img src="../src/img/logo.png" alt="Logo CinéData - Menu page d'accueil" id="headerlogo">
+                </a>
+            </div>
+            <nav id="main-nav">
+                <ul id="mainmenu" class="menu flex">
+                    <li class="mainmenu-item">
+                        <a href="#" class="link" id="menu-home">Accueil</a>
+                    </li>
+                    <li class="mainmenu-item">
+                        <a href="./search.html" class="link" id="menu-search">Recherche</a>
+                    </li>
+                    <li class="mainmenu-item">
+                        <a href="./about.html" class="link" id="menu-about">À propos</a>
+                    </li>
+                    <li class="mainmenu-item">
+                        <a href="./documentation.html" class="link" id="menu-doc">Documentation</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    <!-- MAIN -->
+    <main>
+        <div id="partieDuHaut">
+            <!-- Intégration du logo -->
+            <img src="../src/img/logo.png" alt="Logo du site">
+            <!-- Trait de séparation -->
+            <div class="trait"></div>
+            <h2 class="textToCenter">Premier site de recherche de films à l'IMAC !</h2>
+            <!-- Pas toucher cette div, ce sera la spécial Lucas -->
+            <!-- En travaux, faire attention ! -->
+            <div id="specialLucas">
+                <script>setInterval(compteurAdd1, 3000, compteur, 6)</script>
+                <img src="../src/img/film0.jpg" alt="Previous Image" id="previousImage">
+                <img src="../src/img/film1.jpg" alt="Actual Image" id="actualImage">
+                <img src="../src/img/film2.jpg" alt="Next Image" id="nextImage">
+            </div>
+            <!-- Circulez svp ! -->
+        </div>
+        <div id="partieDuBas">
+            <h1>Films à l'affiche :</h1>
+            <!-- Trait de séparation -->
+            <div class="trait"></div>
+            <!-- Affichage des 3 top film -->
+            <div class="flexbox">
+                <div id="boite1" class="boite">
+                </div>
+                <div id="boite2" class="boite">
+                </div>
+                <div id="boite3" class="boite">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
+</html>
