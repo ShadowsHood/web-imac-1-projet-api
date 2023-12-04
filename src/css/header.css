@@ -1,9 +1,15 @@
+/*--------------------------- Header */
 #header{
     background-color: var(--blue-nav);
-    height: 70px;
+    height: 75px;
     position: fixed;
     width: 100%;
     padding: 5px 0;
+    z-index: 100;
+}
+
+body.scrolled #header {
+    height: 60px;
 }
 
 .header-container {
@@ -17,6 +23,7 @@
     padding: 0 10px;
 }
 
+/*--------------------------- Logo */
 #headerlogo-container {
     width: 25%;
 }
@@ -25,6 +32,7 @@
         height: 100%;
     }
 
+/*--------------------------- Menu */
 #main-nav {
     width: 75%;
 }

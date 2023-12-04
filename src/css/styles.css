@@ -26,6 +26,10 @@
     font-size: 16px;
 }
 
+body {
+    background-color: var(--bg-color);
+}
+
 a {
     text-decoration: none;
 }
@@ -46,10 +50,10 @@ ul {
     align-items: center;
 }
 
-/*--------------------------- CSS reset */
 
-main>*{
-    padding: 90px 150px 20px 150px;
+/*--------------------------- Main */
+main {
+    padding: 10vw;
 }
 
 main{

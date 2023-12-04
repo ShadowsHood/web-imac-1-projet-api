@@ -50,8 +50,6 @@ function compteurAdd1(compteur, nbrImage){
 
 
 
-
-
 // Affichage des 3 top film
 
 async function afficherInBox(name, boxNumber){
