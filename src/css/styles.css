@@ -53,6 +53,7 @@ ul {
 
 /*--------------------------- Main */
 main {
+    margin-top: 100px;
     width: 100%;
     min-height: 100vh;
 }
@@ -61,11 +62,7 @@ main .container {
     padding: 10vw;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
+
 
 /* Toujours prcq je connais pas le selecteur */
 
