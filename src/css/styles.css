@@ -71,14 +71,6 @@ main .container {
     background-color: #11304c;
 }
 
-#partieDuBas>*{
-    background-color: #11304c;
-}
-
-#partieDuBas>*>*{
-    background-color: #11304c;
-}
-
-#partieDuBas>*>*>*{
+#partieDuBas *{
     background-color: #11304c;
 }

@@ -1,0 +1,22 @@
+/* Main section */
+
+main *{
+    margin: 30px;
+}
+
+/* Partie du haut */
+
+/* Fiche des developpeurs */
+
+
+
+#lesDiffDev{
+    flex-direction: row;
+}
+
+.presentationPersonne{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
