@@ -1,13 +1,13 @@
 /*--------------------------- Import & Colors */
 
 :root {
-    --bg-color: rgb(14, 14, 14);
+    --bg-color: rgb(17, 17, 17);
     --blue-dark: rgb(17, 48, 75);
     --blue-light: rgb(0, 184, 230);
     --blue-nav: rgb(13, 24, 33);
 
     --txt-white: rgb(246, 246, 246);
-    --txt-black: rgb(22, 22, 22);
+    --txt-black: rgb(17, 17, 17);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
@@ -39,6 +39,10 @@ ul {
     padding: 0;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 /*--------------------------- Utils */
 
 .flex{
@@ -61,7 +65,6 @@ main {
 main .container {
     padding: 10vw;
 }
-
 
 
 /* Toujours prcq je connais pas le selecteur */
