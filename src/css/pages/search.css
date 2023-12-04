@@ -1,6 +1,6 @@
 /* Separer tous les blocks entre eux */
 
-main>*>*{
+main *{
     margin: 30px;
 }
 

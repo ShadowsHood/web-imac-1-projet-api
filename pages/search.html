@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinéData - Rechercher</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    </style>
+    <link href="../src/css/styles.css" rel="stylesheet">
+    <link href="../src/css/header.css" rel="stylesheet">
+    <link href="../src/css/pages/search.css" rel="stylesheet">
+    <link href="../src/css/footer.css" rel="stylesheet">
+    
+    <script src="../src/js/script.js"></script>
+    <script src="../src/js/search.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div id="headerlogo-container" class="logo">
+                <a href="./index.html">
+                    <img src="../src/img/logo.png" alt="Logo CinéData - Menu page d'accueil" id="headerlogo">
+                </a>
+            </div>
+            <!-- Menu -->
+            <nav id="main-nav">
+                <ul id="mainmenu" class="menu flex">
+                    <li class="mainmenu-item">
+                        <a href="./index.html" class="link" id="menu-home">Accueil</a>
+                    </li>
+                    <li class="mainmenu-item">
+                        <a href="#" class="link" id="menu-search">Recherche</a>
+                    </li>
+                    <li class="mainmenu-item">
+                        <a href="./about.html" class="link" id="menu-about">À propos</a>
+                    </li>
+                    <li class="mainmenu-item">
+                        <a href="./documentation.html" class="link" id="menu-doc">Documentation</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    <!-- MAIN -->
+    <main>
+        <div id="partieDuHaut">
+            <!-- Barre de recherche -->
+            <form id="barreRecherche" onsubmit="event.preventDefault(); searchFilm(document.getElementById('movieName').value);">
+                <input placeholder="Chercher un film..." type="text" id="movieName" name="movieName" required>
+                <button type="submit">Rechercher</button>
+            </form>
+            <!-- Main Info (complétée par le js) -->
+            <div id="mainInfo" class="flexbox">
+            </div>
+            <!-- Lecteur Youtube -->
+            <div id="lecteurYoutube"></div>
+        </div>
+        <div id="partieDuBas">
+            <!-- Cette partie est complétée par le JS -->
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
+</html>

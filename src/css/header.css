@@ -1,0 +1,67 @@
+/*--------------------------- Header */
+#header{
+    background-color: var(--blue-nav);
+    height: 75px;
+    position: fixed;
+    width: 100%;
+    padding: 5px 0;
+    z-index: 100;
+}
+
+body.scrolled #header {
+    height: 60px;
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    padding: 0 calc(10vw - 10px);
+}
+
+#headerlogo-container, #main-nav {
+    height: 100%;
+    padding: 0 10px;
+}
+
+/*--------------------------- Logo */
+#headerlogo-container {
+    width: 25%;
+}
+
+    #headerlogo-container img#headerlogo {
+        height: 100%;
+    }
+
+/*--------------------------- Menu */
+#main-nav {
+    width: 75%;
+}
+
+    #main-nav ul#mainmenu {
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mainmenu-item > a {
+        font-size: 1.125rem;
+        position: relative;
+    }
+    .mainmenu-item > a:hover {
+        color: var(--blue-light);
+    }
+
+    .mainmenu-item > a::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: var(--blue-light);
+        position: absolute;
+        bottom: -7px;
+        left: 50%;
+        transition: all ease .3s;
+    }
+    .mainmenu-item > a:hover::after {
+        width: 100%;
+        left: 0;
+    }

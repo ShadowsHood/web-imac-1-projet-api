@@ -8,6 +8,7 @@ Projet multipages liées à une API simple dans le cadre du projet web de S1 IMA
       - Touver un selecteur pour prendre un element et TOUS les trucs qui sont dedans (ALED SVP !!!)
       - Faire le footer
       - Ajouter des animations plus smooth sur les boutons (notament sur le header)
+      - Faire les @media-querie
 
 ### Section Accueil :
       - Faire une animation plus syle sur le bloc "#specialLucas"
