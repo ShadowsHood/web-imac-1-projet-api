@@ -9,10 +9,10 @@ async function searchFilm(name) {
     const responseOMDB = await fetch("http://www.omdbapi.com/?t="+name+"&apikey=2d2c5592");
     const film = await responseOMDB.json();
 
-    console.log(film);
+    // console.log(film);
 
     if(film.Response == "False"){
-        searchNotFound();
+        affichageNotFound();
     }else{
         let monFilm = film.Title;
 
@@ -31,29 +31,31 @@ async function searchFilm(name) {
 }
 
 function affichageFound (film, link) {
-    document.querySelector("#mainInfo").innerHTML = `
-        <h1 id="filmTitle">`+film.Title+`</h1>
-        <div id="infoPrincipals">
-            <p>Date : <span class="filmExport">`+film.Released+`</span></p>
-            <div class="separateur"></div>
-            <p>Director : <span class="filmExport">`+film.Director+`</span></p>
-            <div class="separateur"></div>
-            <p><span class="filmExport">`+film.Runtime+`</span</p>
-        </div>
-    `          
-    document.querySelector("#lecteurYoutube").innerHTML = `
-        <iframe width=100% height=auto src=`+myNewLink+` title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    `
-    document.querySelector("#alt-info-container").innerHTML = `
-        <img id="afficheFilm" src=`+film.Poster+` alt="Mon affiche"/>
-        <div id="infoComplementaire" class="flexbox">
-            <p id="originalTitle">Titre originale : <span class="filmExport">`+film.Title+`</span></p>
-            <p id="dateSortie">Date de sortie : <span class="filmExport">`+film.Released+`</span></p>
-            <p id="genreFilm">Genre : <span class="filmExport">`+film.Genre+`</span></p>
-            <p id="castingFilm">Casting : <span class="filmExport">`+film.Actors+`</span></p>
-            <p id="shortSummary"><span class="filmExport">`+film.Plot+`</span></p>
-        </div>
-    `
+
+    document.querySelector("#mainInfo").innerHTML = 
+    `<h1 id="filmTitle">`+film.Title+`</h1>
+    <div id="infoPrincipals">
+        <p>Date : <span class="filmExport">`+film.Released+`</span></p>
+        <div class="separateur"></div>
+        <p>Director : <span class="filmExport">`+film.Director+`</span></p>
+        <div class="separateur"></div>
+        <p><span class="filmExport">`+film.Runtime+`</span</p>
+    </div>`
+
+    document.querySelector("#lecteurYoutube").innerHTML = 
+    `<iframe width=100% height=auto src=`+link+` title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+
+    document.querySelector("main").insertAdjacentHTML('beforeend', '<section id="alt-info-container"  class="container colored-container"></section>');
+
+    document.querySelector("#alt-info-container").innerHTML = 
+    `<img id="afficheFilm" src=`+film.Poster+` alt="Mon affiche"/>
+    <div id="infoComplementaire" class="flexbox">
+        <p id="originalTitle">Titre originale : <span class="filmExport">`+film.Title+`</span></p>
+        <p id="dateSortie">Date de sortie : <span class="filmExport">`+film.Released+`</span></p>
+        <p id="genreFilm">Genre : <span class="filmExport">`+film.Genre+`</span></p>
+        <p id="castingFilm">Casting : <span class="filmExport">`+film.Actors+`</span></p>
+        <p id="shortSummary"><span class="filmExport">`+film.Plot+`</span></p>
+    </div>`
 }
 
 function affichageNotFound () {
@@ -61,4 +63,5 @@ function affichageNotFound () {
     `<img src="https://kaamelott-gifboard.fr/gifs/jconnais-pas.gif">`
     document.querySelector("#mainInfo").innerHTML = 
     `<h1 id="filmTitle">Aucun film trouvé... Veuillez reesayer !</h1>`
+    document.querySelector("#alt-info-container").remove()
 }
