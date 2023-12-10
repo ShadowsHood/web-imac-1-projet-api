@@ -1,4 +1,5 @@
 footer{
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -6,12 +7,13 @@ footer{
     height: 70px;
 }
 
-footer *{
-    background-color: #0D1821;
-}
-
 footer a:hover{
     text-decoration: underline;
     color: rgb(0, 184, 230);
     transition-duration: 0ms;
+}
+
+#hautDePage{
+    position: absolute;
+    right: 20px;
 }
