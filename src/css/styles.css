@@ -76,3 +76,13 @@ main .container {
 #partieDuBas *{
     background-color: #11304c;
 }
+
+.text_about {
+    font-size: helvetica;
+    text-align: justify;
+    
+}
+
+.poste_about {
+    color: rgb(0, 184, 230);
+}
