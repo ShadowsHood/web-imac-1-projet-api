@@ -8,6 +8,8 @@
 
     --txt-white: rgb(246, 246, 246);
     --txt-black: rgb(17, 17, 17);
+
+    --border-radius-affiches: 15px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
@@ -27,7 +29,7 @@
 }
 
 body {
-    background: linear-gradient(var(--blue-nav) 85px, var(--bg-color) 150px);
+    background: linear-gradient(var(--blue-nav) 85px, var(--bg-color) 300px);
 }
 
 a {
@@ -39,9 +41,18 @@ ul {
     padding: 0;
 }
 
-h1 {
+h1, h2, h3, h4 {
+
+}
+h1, h2 {
     font-size: 2rem;
+    margin: 15px 0;
     /* text-transform: uppercase; */
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 15px 0;
 }
 
 /*--------------------------- Utils */
@@ -53,6 +64,11 @@ h1 {
 .f-center {
     justify-content: center;
     align-items: center;
+}
+
+.affiche {
+    border-radius: var(--border-radius-affiches);
+    overflow: hidden;
 }
 
 
@@ -70,18 +86,8 @@ main .container {
     padding: 50px 10vw;
 }
 
-/* main>*>*{
-    padding : 30px 20px;
-    margin : 0 60px 0 60px;
-}  */
-
-/* Partie Du Bas */
-
-#partieDuBas{
-    background-color: #11304c;
+main .colored-container {
+    background-color: var(--blue-dark);
 }
 
-#partieDuBas *{
-    background-color: #11304c;
-}
 

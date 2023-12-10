@@ -1,3 +1,7 @@
+#intro {
+    padding-bottom: 0;
+}
+
 /* Slide   */
 
 #slider{
@@ -55,21 +59,26 @@
 
 /* Affichage des 3 top film */
 
-
-#partieDuBas>*>*{
-    justify-self: center;
+#top-films #filmAffiche {
+    gap: 25px;
 }
 
-.boite{
-    display: block;
-    margin: 20px 5px 20px 5px;
-    text-align: center  ;
+#top-films .film {
+    width: 30%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#top-films .film .description {
+    background: linear-gradient(transparent, var(--bg-color));
 }
 
-.boite>p{
-    width: 300px;
-}
-
-#filmAffiche{
-    justify-content: center;
-}
+/* #top-films .film .affiche img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
