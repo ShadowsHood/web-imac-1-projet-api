@@ -1,8 +1,12 @@
 /* Main section */
 
-main *{
+main>*{
+   margin: 30px;
+} 
+
+main>*>*{
     margin: 30px;
-}
+ } 
 
 /* Partie du haut */
 
@@ -21,3 +25,13 @@ main *{
     align-items: center;
 }
 
+
+.text_about {
+    font-size: helvetica;
+    text-align: justify;
+    
+}
+
+.poste_about {
+    color: rgb(0, 184, 230);
+}

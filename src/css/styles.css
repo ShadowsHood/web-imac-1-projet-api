@@ -64,16 +64,5 @@ main {
     overflow-x: hidden;
 }
 
-main .container {
-    padding: 50px 10vw;
-}
 
-.text_about {
-    font-size: helvetica;
-    text-align: justify;
-    
-}
 
-.poste_about {
-    color: rgb(0, 184, 230);
-}
