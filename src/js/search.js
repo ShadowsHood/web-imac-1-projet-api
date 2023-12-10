@@ -21,9 +21,9 @@ async function searchFilm(name) {
 
         let videos = maVideo.items;
         for(video of videos){
-            let myNewLink = "https://www.youtube.com/embed/"+(video.id.videoId);
+            // let myNewLink = "https://www.youtube.com/embed/"+(video.id.videoId);
             // Pour eviter d'use tous les quotas ytb
-            // let myNewLink = "https://www.youtube.com/embed/d5MZnsaAejA?si=KbDEYcEYXw0ksmMl";
+            let myNewLink = "https://www.youtube.com/embed/d5MZnsaAejA?si=KbDEYcEYXw0ksmMl";
 
             affichageFound (film, myNewLink);
         };
