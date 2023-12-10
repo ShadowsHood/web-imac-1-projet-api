@@ -52,9 +52,11 @@
     <main>
         <!-- Barre de recherche -->
         <section id="search" class="container">
-            <form id="barreRecherche" onsubmit="event.preventDefault(); searchFilm(document.getElementById('movieName').value);">
-                <label for="movieName">Nom du film</label>
-                <input placeholder="Chercher un film..." type="text" id="movieName" name="movieName" required>
+            <form id="search-form" onsubmit="event.preventDefault(); searchFilm(document.getElementById('movieName').value);">
+                <div id="name-input">
+                    <label for="movieName">Nom du film</label>
+                    <input placeholder="Chercher un film..." type="text" id="movieName" name="movieName" required>
+                </div>
                 <button type="submit">Rechercher</button>
             </form>
         </section>
@@ -68,7 +70,7 @@
             <div id="lecteurYoutube"><!-- Lecteur Youtube --></div>
 
         </section>
-        
+
     </main>
     <!-- FOOTER -->
     <footer>

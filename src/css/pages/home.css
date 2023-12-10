@@ -60,13 +60,12 @@
 /* Affichage des 3 top film */
 
 #top-films #filmAffiche {
-    gap: 25px;
+    gap: 30px;
     justify-content: center;
 }
 
 #top-films .film {
-    width: 30%;
-    min-width: 275px;
+    width: 280px;
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;

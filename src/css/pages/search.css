@@ -4,10 +4,10 @@
 
 /* Barre de recherche */
 
-#barreRecherche>button{
+#search-form #name-input input  {
     color: #ffffff;
     font-family: 'Inter', sans-serif;
-    font-size: 22px;
+    font-size: 1.25rem;
     background-color: #252E39;
     border-radius: 40px;
     padding: 10px;
@@ -15,14 +15,9 @@
 }
 
 
-#barreRecherche>button:hover{
+#search-form #name-input input:hover{
     color: #000000;
-    font-family: 'Inter', sans-serif;
-    font-size: 22px;
     background-color: #afd7fa;
-    border-radius: 40px;
-    padding: 10px;
-    border-style: none;
 }
 
 #barreRecherche>input{
