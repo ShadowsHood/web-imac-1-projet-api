@@ -61,7 +61,7 @@
 
 #top-films #filmAffiche {
     gap: 30px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #top-films .film {
