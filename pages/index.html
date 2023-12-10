@@ -51,23 +51,23 @@
 
     <!-- MAIN -->
     <main>
-
+        
         <!-- Intro -->
         <section id="intro" class="container flex f-center">
             <h1>Premier site de recherche de films à l'IMAC</h1>
         </section>
-
+        
         <!-- Slider -->
-        <section id="partieDuHaut" class="container">
-            <div id="specialLucas">
-                <script>setInterval(compteurAdd1, 3000, compteur, 6)</script>
-                <img src="../src/img/film0.jpg" alt="Previous Image" id="previousImage">
-                <img src="../src/img/film1.jpg" alt="Actual Image" id="actualImage">
-                <img src="../src/img/film2.jpg" alt="Next Image" id="nextImage">
-            </div>
-            <!-- Circulez svp ! -->
+        <section id="slider-container" class="container">
+            <ul id="slider">
+                <li class="slide-item" id="previous-slide-item" data-id="1"><img src="../src/img/film0.jpg" alt=""></li>
+                <li class="slide-item" id="previous-slide-item" data-id="2"><img src="../src/img/film0.jpg" alt=""></li>
+                <li class="slide-item" id="current-slide-item" data-id="3"><img src="../src/img/film1.jpg" alt=""></li>
+                <li class="slide-item" id="next-slide-item" data-id="4"><img src="../src/img/film2.jpg" alt=""></li>
+                <li class="slide-item" id="next-slide-item" data-id="5"><img src="../src/img/film2.jpg" alt=""></li>
+            </ul>
         </section>
-
+        
         <section id="partieDuBas" class="container">
             <h1>Films à l'affiche :</h1>
             <!-- Trait de séparation -->
@@ -82,12 +82,14 @@
                 </div>
             </div>
         </section>
-
+        
     </main>
 
     <!-- FOOTER -->
     <footer>
         <p>footer</p>
     </footer>
+    
+    <script>init()</script>
 </body>
 </html>

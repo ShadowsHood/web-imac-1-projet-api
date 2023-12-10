@@ -1,47 +1,67 @@
-.textToCenter{
-    text-align: center;
-}
+/* Slide   */
 
-
-/* <!-- Pas toucher cette div, ce sera la spécial Lucas --> */  
-
-#specialLucas{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-    position: relative;
+#slider{
+    /* display: grid;
+    grid-template: 1fr / repeat(3, 1fr); */
+    position: relative; 
     height: 550px;
-    width: 950px;
-    margin: 30px;
+    width: 100%;
 }
 
-#specialLucas img{
+#slider .slide-item{
     position: absolute;
+    width: auto;
+    height: 100%;
+    top: 0;
+    transition: all ease .3s;
 }
 
-#actualImage{
-    grid-column: 2 / 5;
-    width: 100%;
-    height: 500px;
-    z-index: 3;
-}
+    #slider .slide-item[data-id="1"]{
+        left: calc(50% - 500px);
+        transform: translateX(-50%) scale(0);
+        opacity: 0;
+        z-index: 1;
+    }
+    #slider .slide-item[data-id="2"]{
+        left: calc(50% - 250px);
+        transform: translateX(-50%) scale(0.8);
+        opacity: 1;
+        z-index: 2;
+    }
+    #slider .slide-item[data-id="3"]{
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 1;
+        z-index: 3;
+    }
+    #slider .slide-item[data-id="4"]{
+        left: calc(50% + 250px);
+        transform: translateX(-50%) scale(0.8);
+        opacity: 1;
+        z-index: 2;
+    }
+    #slider .slide-item[data-id="5"]{
+        left: calc(50% + 500px);
+        transform: translateX(-50%) scale(0);
+        opacity: 0;
+        z-index: 1;
+    }
 
-#previousImage{
-    grid-column: 1 / 3;
-    opacity: 0.5;
-    width: 100%;
-    height: 400px;
-    z-index: 1;
-}
-
-#nextImage{
-    grid-column: 4 / 6;
-    opacity: 0.5;
-    width: 100%;
-    height: 400px;
-    z-index: 2;
-}
+        #slider .slide-item img{
+            width: auto;
+            height: 100%;
+            /* object-fit: cover; */
+        }
 
 /* Affichage des 3 top film */
+
+#partieDuBas{
+    background-color: #11304c;
+}
+
+#partieDuBas *{
+    background-color: #11304c;
+}
 
 #partieDuBas>*>*{
     justify-self: center;
