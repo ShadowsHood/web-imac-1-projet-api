@@ -39,7 +39,7 @@ async function searchFilm(name) {
                 </div>
             `          
             document.querySelector("#lecteurYoutube").innerHTML = `
-                <iframe width=100% height=500px src=`+myNewLink+` title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width=100% height=100% src=`+myNewLink+` title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             `
             document.querySelector("#partieDuBas").innerHTML = `
                 <img id="afficheFilm" src=`+film.Poster+` alt="Mon affiche"/>
