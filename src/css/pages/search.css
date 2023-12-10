@@ -65,10 +65,6 @@
     color: #00B9E7;
 }
 
-#partieDuBas{
-    display: flex;
-}
-
 #infoComplementaire>*{
     margin: 30px 0 30px 0;
     max-width: 600px;
@@ -76,6 +72,6 @@
 
 /* Lecteur Youtube */
 
-#lecteurYoutube{
-    height: 50em;
+#lecteurYoutube iframe{
+    aspect-ratio: 16/9;
 }

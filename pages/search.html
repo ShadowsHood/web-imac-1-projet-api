@@ -50,21 +50,28 @@
 
     <!-- MAIN -->
     <main>
-        <div id="partieDuHaut">
-            <!-- Barre de recherche -->
+        <!-- Barre de recherche -->
+        <section id="search" class="container">
             <form id="barreRecherche" onsubmit="event.preventDefault(); searchFilm(document.getElementById('movieName').value);">
+                <label for="movieName">Nom du film</label>
                 <input placeholder="Chercher un film..." type="text" id="movieName" name="movieName" required>
                 <button type="submit">Rechercher</button>
             </form>
-            <!-- Main Info (complétée par le js) -->
+        </section>
+
+        <section id="main-info-container" class="container">
+
             <div id="mainInfo" class="flexbox">
+                <!-- Main Info (complétée par le js) -->
             </div>
-            <!-- Lecteur Youtube -->
-            <div id="lecteurYoutube"></div>
-        </div>
-        <div id="partieDuBas">
+            
+            <div id="lecteurYoutube"><!-- Lecteur Youtube --></div>
+
+        </section>
+        
+        <section id="alt-info-container"  class="container colored-container">
             <!-- Cette partie est complétée par le JS -->
-        </div>
+        </section>
     </main>
     <!-- FOOTER -->
     <footer>
