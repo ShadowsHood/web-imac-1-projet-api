@@ -66,10 +66,14 @@ main {
     overflow-x: hidden;
 }
 
-main>*>*{
+main .container {
+    padding: 50px 10vw;
+}
+
+/* main>*>*{
     padding : 30px 20px;
     margin : 0 60px 0 60px;
-} 
+}  */
 
 /* Partie Du Bas */
 
