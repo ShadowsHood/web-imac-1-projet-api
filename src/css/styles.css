@@ -27,7 +27,7 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background: linear-gradient(var(--blue-nav) 85px, var(--bg-color) 150px);
 }
 
 a {
@@ -41,6 +41,7 @@ ul {
 
 h1 {
     font-size: 2rem;
+    /* text-transform: uppercase; */
 }
 
 /*--------------------------- Utils */
@@ -60,19 +61,9 @@ main {
     margin-top: 100px;
     width: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 main .container {
-    padding: 10vw;
-}
-
-
-/* Toujours prcq je connais pas le selecteur */
-
-#partieDuBas{
-    background-color: #11304c;
-}
-
-#partieDuBas *{
-    background-color: #11304c;
+    padding: 50px 10vw;
 }

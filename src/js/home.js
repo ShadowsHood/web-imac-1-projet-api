@@ -1,54 +1,24 @@
+function init () {
+    slider()
+}
 // Changement des films de l'accueil
 
-function changeActualFilm(compteur, nbrImage){
-    let actualNumber = compteur.toString();
-    if(compteur == 0){
-        let previousNumber = (nbrImage-1).toString();
-        let nextNumber = (compteur+1).toString();
-        document.querySelector("#specialLucas").innerHTML = `
-        <img src="../src/img/film`+previousNumber+`.jpg" alt="Previous Image" id="previousImage">
-        <img src="../src/img/film`+actualNumber+`.jpg" alt="Actual Image" id="actualImage">
-        <img src="../src/img/film`+nextNumber+`.jpg" alt="Next Image" id="nextImage">
-    `
-    }
-    else if(compteur == nbrImage-1){
-        let previousNumber = (compteur-1).toString();
-        let nextNumber = "0";
-        document.querySelector("#specialLucas").innerHTML = `
-        <img src="../src/img/film`+previousNumber+`.jpg" alt="Previous Image" id="previousImage">
-        <img src="../src/img/film`+actualNumber+`.jpg" alt="Actual Image" id="actualImage">
-        <img src="../src/img/film`+nextNumber+`.jpg" alt="Next Image" id="nextImage">
-    `
-    }
-    else{
-        let previousNumber = (compteur-1).toString();
-        let nextNumber = (compteur+1).toString();
-        document.querySelector("#specialLucas").innerHTML = `
-            <img src="../src/img/film`+previousNumber+`.jpg" alt="Previous Image" id="previousImage">
-            <img src="../src/img/film`+actualNumber+`.jpg" alt="Actual Image" id="actualImage">
-            <img src="../src/img/film`+nextNumber+`.jpg" alt="Next Image" id="nextImage">
-        `
-    }
+function slider () {
+    setInterval(function () {
+        let elements = document.getElementsByClassName("slide-item");
+
+        let newLi = '<li class="slide-item" id="previous-slide-item" data-id="1"><img src="../src/img/film0.jpg" alt=""></li>';
+        let parent = document.querySelector("ul#slider");
+
+        for (let item of elements) {
+            let id = parseInt(item.getAttribute("data-id"))
+            item.setAttribute("data-id", id+1)
+        }
+
+        parent.removeChild(parent.lastElementChild);
+        parent.insertAdjacentHTML('afterbegin', newLi)
+    }, 3000);
 }
-
-let compteur = [0];
-
-function compteurAdd1(compteur, nbrImage){
-    console.log(compteur[0]);
-    let i = compteur[0];
-    if(compteur == nbrImage-1){
-        i = 0;
-    }
-    else{
-        i += 1;
-    }
-    compteur[0] = i;
-    changeActualFilm(compteur[0], nbrImage);
-}
-
-
-
-
 
 // Affichage des 3 top film
 
