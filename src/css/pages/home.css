@@ -61,10 +61,12 @@
 
 #top-films #filmAffiche {
     gap: 25px;
+    justify-content: center;
 }
 
 #top-films .film {
     width: 30%;
+    min-width: 275px;
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,7 +76,8 @@
     justify-content: flex-end;
 }
 #top-films .film .description {
-    background: linear-gradient(transparent, var(--bg-color));
+    padding: 40px 20px 20px 20px;
+    background: linear-gradient(transparent, rgba(17, 17, 17, .85) 50%);
 }
 
 /* #top-films .film .affiche img {

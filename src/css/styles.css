@@ -42,17 +42,16 @@ ul {
 }
 
 h1, h2, h3, h4 {
-
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 h1, h2 {
     font-size: 2rem;
-    margin: 15px 0;
     /* text-transform: uppercase; */
 }
 
 h3 {
     font-size: 1.25rem;
-    margin: 15px 0;
 }
 
 /*--------------------------- Utils */
