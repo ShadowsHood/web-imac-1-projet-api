@@ -57,12 +57,27 @@ h1 {
 
 
 /*--------------------------- Main */
+
+
 main {
     margin-top: 100px;
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     overflow-x: hidden;
 }
 
+main>*>*{
+    padding : 30px 20px;
+    margin : 0 60px 0 60px;
+} 
 
+/* Partie Du Bas */
+
+#partieDuBas{
+    background-color: #11304c;
+}
+
+#partieDuBas *{
+    background-color: #11304c;
+}
 

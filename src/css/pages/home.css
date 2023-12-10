@@ -55,13 +55,6 @@
 
 /* Affichage des 3 top film */
 
-#partieDuBas{
-    background-color: #11304c;
-}
-
-#partieDuBas *{
-    background-color: #11304c;
-}
 
 #partieDuBas>*>*{
     justify-self: center;
@@ -75,4 +68,8 @@
 
 .boite>p{
     width: 300px;
+}
+
+#filmAffiche{
+    justify-content: center;
 }
