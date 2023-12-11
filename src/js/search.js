@@ -39,7 +39,7 @@ function affichageFound (film, link) {
         <div class="separateur"></div>
         <p>Director : <span class="filmExport">`+film.Director+`</span></p>
         <div class="separateur"></div>
-        <p>Durée<span class="filmExport">`+film.Runtime+`</span</p>
+        <p>Durée : <span class="filmExport">`+film.Runtime+`</span</p>
     </div>`
 
     document.querySelector("#lecteurYoutube").innerHTML = 

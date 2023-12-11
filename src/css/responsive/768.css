@@ -1,0 +1,20 @@
+@media screen and (max-width : 768px) {
+    main .container {
+        padding: 25px 5vw;
+    }
+
+    #infoPrincipals {
+        flex-direction: column;
+    }
+        #infoPrincipals > *{
+            margin: 5px 0;
+        }
+        .separateur {
+            display: none;
+        }
+    #infoComplementaire {
+        text-align: center;
+        width: 100%;
+        padding-left: 0;
+    }
+}
