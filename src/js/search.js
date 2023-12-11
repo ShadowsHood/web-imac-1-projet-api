@@ -43,12 +43,12 @@ function affichageFound (film, link) {
     </div>`
 
     document.querySelector("#lecteurYoutube").innerHTML = 
-    `<iframe width=100% height=auto class="affiche" src=`+link+` title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+    `<iframe width=100% height=auto class="affiche" src=`+link+` title="`+film.Title+` lecteur YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
 
     document.querySelector("main").insertAdjacentHTML('beforeend', '<section id="alt-info-container"  class="container colored-container flex"></section>');
 
     document.querySelector("#alt-info-container").innerHTML = 
-    `<img id="afficheFilm" class="affiche" src=`+film.Poster+` alt="Mon affiche"/>
+    `<img id="afficheFilm" class="affiche" src=`+film.Poster+` alt="Affiche de `+film.Title+`"/>
     <div id="infoComplementaire" class="flexbox">
         <p id="originalTitle">Titre originale : <span class="filmExport">`+film.Title+`</span></p>
         <p id="dateSortie">Date de sortie : <span class="filmExport">`+film.Released+`</span></p>
