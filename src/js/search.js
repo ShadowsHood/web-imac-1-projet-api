@@ -60,7 +60,7 @@ function affichageFound (film, link) {
 
 function affichageNotFound () {
     document.querySelector("#lecteurYoutube").innerHTML = 
-    `<img src="https://kaamelott-gifboard.fr/gifs/jconnais-pas.gif">`
+    `<img src="../src/img/jconnais-pas.gif" alt="Gif erreur de recherche">`
     document.querySelector("#mainInfo").innerHTML = 
     `<h1 id="filmTitle">Aucun film trouvé... Veuillez reesayer !</h1>`
     document.querySelector("#alt-info-container").remove()
