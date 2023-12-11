@@ -37,7 +37,7 @@ function affichageFound (film, link) {
     <div id="infoPrincipals">
         <p>Date : <span class="filmExport">`+film.Released+`</span></p>
         <div class="separateur"></div>
-        <p>Director : <span class="filmExport">`+film.Director+`</span></p>
+        <p>Réalisateur : <span class="filmExport">`+film.Director+`</span></p>
         <div class="separateur"></div>
         <p>Durée : <span class="filmExport">`+film.Runtime+`</span</p>
     </div>`
