@@ -87,20 +87,26 @@
 
 /* Partie du bas */
 
+#alt-info-container {
+    justify-content: center;
+}
+
 .filmExport{
     color: var(--blue-light);
 }
 
-#alt-info-container {
-    flex-wrap: nowrap;
+#afficheFilm {
+    height: auto;
+    width: 30%;
+    min-width: 200px;
 }
 
 #infoComplementaire {
     padding-left: 25px;
+    box-sizing: border-box;
+    width: 70%;
 }
 
 #infoComplementaire > p {
     margin: 30px 0;
 }
-
-/* Lecteur Youtube */
