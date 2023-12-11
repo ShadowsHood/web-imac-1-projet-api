@@ -99,6 +99,7 @@
     height: auto;
     width: 30%;
     min-width: 200px;
+    box-shadow: 0 0 30px rgba(0, 184, 230, 0.4);
 }
 
 #infoComplementaire {

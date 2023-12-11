@@ -37,7 +37,7 @@ function affichageFound (film, link) {
     <div id="infoPrincipals">
         <p>Date : <span class="filmExport">`+film.Released+`</span></p>
         <div class="separateur"></div>
-        <p>Director : <span class="filmExport">`+film.Director+`</span></p>
+        <p>Réalisateur : <span class="filmExport">`+film.Director+`</span></p>
         <div class="separateur"></div>
         <p>Durée : <span class="filmExport">`+film.Runtime+`</span</p>
     </div>`
@@ -54,13 +54,13 @@ function affichageFound (film, link) {
         <p id="dateSortie">Date de sortie : <span class="filmExport">`+film.Released+`</span></p>
         <p id="genreFilm">Genre : <span class="filmExport">`+film.Genre+`</span></p>
         <p id="castingFilm">Casting : <span class="filmExport">`+film.Actors+`</span></p>
-        <p id="shortSummary"><span class="filmExport">`+film.Plot+`</span></p>
+        <p id="shortSummary">Synopsis : <span class="filmExport">`+film.Plot+`</span></p>
     </div>`
 }
 
 function affichageNotFound () {
     document.querySelector("#lecteurYoutube").innerHTML = 
-    `<img src="https://kaamelott-gifboard.fr/gifs/jconnais-pas.gif">`
+    `<img src="../src/img/jconnais-pas.gif" alt="Gif erreur de recherche">`
     document.querySelector("#mainInfo").innerHTML = 
     `<h1 id="filmTitle">Aucun film trouvé... Veuillez reesayer !</h1>`
     document.querySelector("#alt-info-container").remove()
