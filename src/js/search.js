@@ -54,7 +54,7 @@ function affichageFound (film, link) {
         <p id="dateSortie">Date de sortie : <span class="filmExport">`+film.Released+`</span></p>
         <p id="genreFilm">Genre : <span class="filmExport">`+film.Genre+`</span></p>
         <p id="castingFilm">Casting : <span class="filmExport">`+film.Actors+`</span></p>
-        <p id="shortSummary"><span class="filmExport">`+film.Plot+`</span></p>
+        <p id="shortSummary">Synopsis : <span class="filmExport">`+film.Plot+`</span></p>
     </div>`
 }
 
