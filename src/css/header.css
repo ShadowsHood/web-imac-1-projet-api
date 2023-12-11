@@ -18,6 +18,7 @@ body.scrolled #header {
     height: 100%;
     display: flex;
     padding: 0 calc(10vw - 10px);
+    position: relative;
 }
 
 #headerlogo-container, #main-nav {
@@ -67,3 +68,10 @@ body.scrolled #header {
         width: 100%;
         left: 0;
     }
+
+    
+#hamburger-checkbox, #hamburger {
+    display: none;
+}
+
+    

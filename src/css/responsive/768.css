@@ -1,7 +1,131 @@
 @media screen and (max-width : 768px) {
+
     main .container {
         padding: 25px 5vw;
     }
+
+    /* Menu responsive */
+    #main-nav {
+        position: fixed;
+        width: 100vw;
+        height: 0;
+        background: linear-gradient(var(--blue-nav) 85px, var(--bg-color) 300px);
+        top: 85px;
+        left: 0;
+        padding: 0; 
+        overflow: hidden;
+    }
+        body.scrolled #header .header-container #main-nav {
+            top: 70px;
+        }
+        #main-nav ul#mainmenu {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    
+        .mainmenu-item {
+            width: 100%;
+            text-align: center;
+        }
+        .mainmenu-item > a {
+            padding: 15px 0;
+            display: block;
+            width: 100%;
+        }
+        .mainmenu-item > a:hover {
+            color: var(--txt-white);
+        }
+        .mainmenu-item > a:hover {
+            background-color: var(--blue-dark);
+        }
+    
+    
+    
+        .mainmenu-item > a::after {
+            display: none;
+        }
+
+    /* Menu hamburger */
+
+    #hamburger-checkbox, #hamburger {
+        display: block;
+    }
+
+    .header-container #hamburger-checkbox {
+        position: absolute;
+        height: 32px;
+        width: 32px;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        opacity: 0;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
+    .header-container #hamburger {
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 5;
+    }
+    
+    .header-container #hamburger .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: var(--txt-white);
+    }
+    
+        .header-container #hamburger .line1 {
+            transform-origin: 0% 0%;
+            transition: transform 0.4s ease-in-out;
+        }
+        
+        .header-container #hamburger .line2 {
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .header-container #hamburger .line3 {
+            transform-origin: 0% 100%;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        /* Quand c'est checked */
+
+        .header-container input[type="checkbox"]:checked ~ #main-nav {
+            display: block;
+            height: calc(100vh - 85px);
+        }
+            body.scrolled #header .header-container input[type="checkbox"]:checked ~ #main-nav {
+                height: calc(100vh - 70px);
+            }
+        
+        .header-container input[type="checkbox"]:checked ~ #hamburger .line1 {
+            transform: rotate(45deg);
+        }
+        
+        .header-container input[type="checkbox"]:checked ~ #hamburger .line2 {
+            transform: scaleY(0);
+        }
+        
+        .header-container input[type="checkbox"]:checked ~ #hamburger .line3 {
+            transform: rotate(-45deg);
+        }
+        
+        .header-container input[type="checkbox"]:checked ~ .logo{
+            display: none;
+        }
+
+
+    /* Page search */
 
     #infoPrincipals {
         flex-direction: column;
@@ -18,4 +142,8 @@
         width: 100%;
         padding-left: 0;
     }
+
+
+
+
 }
