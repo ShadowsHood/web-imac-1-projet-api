@@ -31,6 +31,11 @@ body.scrolled #header {
     width: 25%;
 }
 
+    #headerlogo-container a {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
     #headerlogo-container img#headerlogo {
         height: 100%;
     }

@@ -18,6 +18,10 @@
     box-shadow: 0 0 30px rgba(0, 184, 230, 0.4);
 }
 
+    .resizable .pdf-error a {
+        color: var(--blue-light);
+    }
+
 #mentionLegal h3 {
     text-align: left;
 }

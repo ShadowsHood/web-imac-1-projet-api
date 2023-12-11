@@ -4,6 +4,14 @@
         padding: 25px 5vw;
     }
 
+    #headerlogo-container {
+        width: auto;
+    }
+
+    .header-container {
+        padding: 0;
+    }
+
     /* Menu responsive */
     #main-nav {
         position: fixed;
