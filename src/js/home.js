@@ -4,7 +4,7 @@ function init () {
 // Changement des films de l'accueil
 
 function slider () {
-    const parent = document.querySelector("ul#slider");
+    const parent = document.querySelector("ol#slider");
     
     setInterval(function () {
         let elements = document.getElementsByClassName("slide-item");
