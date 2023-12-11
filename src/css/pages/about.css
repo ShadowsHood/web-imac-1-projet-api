@@ -6,13 +6,16 @@
 
 
 
-#lesTravailleurs{
-    flex-direction: column;
-}
-
 #quiSommesNous{
     flex-direction: column;
 }
+
+#lesTravailleurs{
+    justify-content: space-between;
+    width: 100%;
+}
+
+
 
 .presentationPersonne{
     display: flex;
@@ -30,7 +33,7 @@
 .text_about {
     font-size: helvetica;
     text-align: justify;
-    
+    border-radius: 5%;
 }
 
 .poste_about {
