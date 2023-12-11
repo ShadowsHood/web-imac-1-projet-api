@@ -6,8 +6,12 @@
 
 
 
-#lesDiffDev{
-    flex-direction: row;
+#lesTravailleurs{
+    flex-direction: column;
+}
+
+#quiSommesNous{
+    flex-direction: column;
 }
 
 .presentationPersonne{
