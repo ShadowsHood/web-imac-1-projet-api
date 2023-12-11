@@ -16,7 +16,7 @@ function slider () {
             idNewImg = parseInt(item.getAttribute("data-img"));
         }
 
-        let newLi = '<li class="slide-item" id="previous-slide-item" data-id="1" data-img="'+idNewImg+'"><img src="../src/img/films/film'+idNewImg+'.jpg" alt=""></li>';
+        let newLi = '<li class="slide-item affiche" id="previous-slide-item" data-id="1" data-img="'+idNewImg+'"><img src="../src/img/films/film'+idNewImg+'.jpg" alt=""></li>';
 
         parent.removeChild(parent.lastElementChild);
         parent.insertAdjacentHTML('afterbegin', newLi)

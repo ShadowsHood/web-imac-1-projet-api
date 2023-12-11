@@ -30,6 +30,7 @@
 
 body {
     background: linear-gradient(var(--blue-nav) 85px, var(--bg-color) 300px);
+    /* cursor: wait; */
 }
 
 a {
@@ -51,6 +52,10 @@ h1, h2 {
 }
 
 h3 {
+    font-size: 1.25rem;
+}
+
+form {
     font-size: 1.25rem;
 }
 

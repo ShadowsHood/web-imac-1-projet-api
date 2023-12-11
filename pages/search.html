@@ -52,12 +52,12 @@
     <main>
         <!-- Barre de recherche -->
         <section id="search" class="container">
-            <form id="search-form" onsubmit="event.preventDefault(); searchFilm(document.getElementById('movieName').value);">
+            <form id="search-form" class="flex f-center" onsubmit="event.preventDefault(); searchFilm(document.getElementById('movieName').value);">
                 <div id="name-input">
+                    <input type="text" id="movieName" name="movieName" required>
                     <label for="movieName">Nom du film</label>
-                    <input placeholder="Chercher un film..." type="text" id="movieName" name="movieName" required>
                 </div>
-                <button type="submit">Rechercher</button>
+                <button type="submit" id="submitInput">Rechercher</button>
             </form>
         </section>
 

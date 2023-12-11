@@ -39,16 +39,16 @@ function affichageFound (film, link) {
         <div class="separateur"></div>
         <p>Director : <span class="filmExport">`+film.Director+`</span></p>
         <div class="separateur"></div>
-        <p><span class="filmExport">`+film.Runtime+`</span</p>
+        <p>Durée<span class="filmExport">`+film.Runtime+`</span</p>
     </div>`
 
     document.querySelector("#lecteurYoutube").innerHTML = 
-    `<iframe width=100% height=auto src=`+link+` title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+    `<iframe width=100% height=auto class="affiche" src=`+link+` title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
 
-    document.querySelector("main").insertAdjacentHTML('beforeend', '<section id="alt-info-container"  class="container colored-container"></section>');
+    document.querySelector("main").insertAdjacentHTML('beforeend', '<section id="alt-info-container"  class="container colored-container flex"></section>');
 
     document.querySelector("#alt-info-container").innerHTML = 
-    `<img id="afficheFilm" src=`+film.Poster+` alt="Mon affiche"/>
+    `<img id="afficheFilm" class="affiche" src=`+film.Poster+` alt="Mon affiche"/>
     <div id="infoComplementaire" class="flexbox">
         <p id="originalTitle">Titre originale : <span class="filmExport">`+film.Title+`</span></p>
         <p id="dateSortie">Date de sortie : <span class="filmExport">`+film.Released+`</span></p>

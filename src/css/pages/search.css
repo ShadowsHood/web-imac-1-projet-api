@@ -3,40 +3,63 @@
 
 
 /* Barre de recherche */
+#search {
+    padding-bottom: 0;
+}
+#search-form {
+    gap: 15px;
+}
 
+#search-form #name-input  {
+    position: relative;
+    min-width: 50%;
+}
+#search-form #name-input label  {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(246, 246, 246, 0.5);
+    cursor: text;
+}
 #search-form #name-input input  {
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.25rem;
-    background-color: #252E39;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--blue-dark);
     border-radius: 40px;
-    padding: 10px;
-    border-style: none;
+    padding: 10px 15px;
+    border: var(--blue-dark) 2px solid;
 }
+    /* #search-form #name-input input:hover{
+        color: var(--txt-black);
+        background-color: var(--blue-light);
+    } */
+    #search-form #name-input input:focus-visible{
+        outline: var(--txt-white) 2px solid;
+    }
 
+    #search-form #name-input input:focus ~ label,
+    #search-form #name-input input:valid ~ label  {
+        top: 0;
+        transform: translateY(calc(-100% - 5px));
+    }
 
-#search-form #name-input input:hover{
-    color: #000000;
-    background-color: #afd7fa;
-}
-
-#barreRecherche>input{
-    width: 70%;
-    height: 35px;
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size: 22px;
-    background-color: #252E39;
+#search-form #submitInput{
+    background-color: var(--blue-dark);
     border-radius: 40px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-style: none;
-    text-align: start;
+    cursor: pointer;
+    border: var(--blue-light) 2px solid;
 }
+    #search-form #submitInput:hover{
+        background-color: var(--blue-light);
+    }
+
 
 /* Utile pour les main info dans la premiere partie du main */
-
-.flexbox{
-    flex-direction: column;
+#mainInfo {
+    text-align: center;
 }
 
 #infoPrincipals{
@@ -45,28 +68,39 @@
     justify-content: center;
     align-items: center;
     justify-self: center;
+    padding: 15px 0 30px 0;
 }
 
-.separateur{
-    height: 30px;
-    width: 2px;
-    background-color: #ffffff;
-    margin: 0 20px 0 20px;
+    .separateur{
+        height: 30px;
+        width: 2px;
+        background-color: #ffffff;
+        margin: 0 20px 0 20px;
+    }
+#lecteurYoutube {
+    text-align: center;
 }
+    #lecteurYoutube iframe{
+        aspect-ratio: 16/9;
+        box-shadow: 0 0 30px rgba(0, 184, 230, 0.4);
+    }
 
 /* Partie du bas */
 
 .filmExport{
-    color: #00B9E7;
+    color: var(--blue-light);
 }
 
-#infoComplementaire>*{
-    margin: 30px 0 30px 0;
-    max-width: 600px;
+#alt-info-container {
+    flex-wrap: nowrap;
+}
+
+#infoComplementaire {
+    padding-left: 25px;
+}
+
+#infoComplementaire > p {
+    margin: 30px 0;
 }
 
 /* Lecteur Youtube */
-
-#lecteurYoutube iframe{
-    aspect-ratio: 16/9;
-}

@@ -59,6 +59,10 @@
 
 /* Affichage des 3 top film */
 
+#top-films h2 {
+    text-align: center;
+}
+
 #top-films #filmAffiche {
     gap: 30px;
     justify-content: space-around;
