@@ -38,6 +38,7 @@
         transform: translateX(-50%);
         opacity: 1;
         z-index: 3;
+        box-shadow: 0 0 30px rgba(0, 184, 230, 0.4);
     }
     #slider .slide-item[data-id="4"]{
         left: calc(50% + 25vw);

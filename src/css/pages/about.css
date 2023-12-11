@@ -3,29 +3,36 @@
 }
 
 #lesTravailleurs{
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
+    margin: 50px 0;
+    gap: 30px;
 }
 
 
 
-.presentationPersonne{
+.presentationPersonne {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 0 30px 0 30px;
 }
-
-.presentationPersonne>*{
-    padding: 5px;
-}
+    .presentationPersonne p {
+        margin-top: 10px;
+    }
+    .presentationPersonne img {
+        box-shadow: 0 0 30px rgba(0, 184, 230, 0.4);
+        margin-bottom: 10px;
+        height: 300px;
+        width: auto;
+    }
 
 
 .text_about {
-    font-size: helvetica;
     text-align: justify;
-    border-radius: 5%;
+}
+.text_about p {
+    margin: 10px 0;
 }
 
 .poste_about {
