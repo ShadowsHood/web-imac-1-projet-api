@@ -18,7 +18,7 @@ function slider () {
             altNewImg = item.querySelector("img").getAttribute("alt");
         }
 
-        let newLi = '<li class="slide-item affiche" id="previous-slide-item" data-id="1" data-img="'+idNewImg+'"><img src="../src/img/films/film'+idNewImg+'.jpg" alt="'+altNewImg+'"></li>';
+        let newLi = '<li class="slide-item affiche" data-id="1" data-img="'+idNewImg+'"><img src="../src/img/films/film'+idNewImg+'.jpg" alt="'+altNewImg+'"></li>';
 
         parent.removeChild(parent.lastElementChild);
         parent.insertAdjacentHTML('afterbegin', newLi)
